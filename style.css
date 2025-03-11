@@ -1,0 +1,212 @@
+/* Main app styling */
+.main {
+    padding: 1rem;
+}
+
+/* Custom title styling */
+.title {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: #1E1E1E;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Input field styling */
+div[data-baseweb="input"] {
+    border-radius: 8px !important;
+}
+
+/* Button styling */
+.stButton button {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    transform: scale(1.05);
+}
+
+/* Category selector styling */
+.category-selector {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Results container */
+.results-container {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* Custom select box */
+div[role="listbox"] ul {
+    border-radius: 8px !important;
+}
+
+/* Make the app more responsive */
+@media (max-width: 768px) {
+    .main {
+        padding: 0.5rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Streamlit default element overrides */
+.stSelectbox label, .stNumberInput label {
+    font-weight: 600;
+}
+
+/* Metric styling */
+[data-testid="stMetricValue"] {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #4CAF50 !important;
+}
+
+/* Dataframe styling */
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+}
+
+/* Sidebar styling */
+.css-1d391kg, .css-163ttbj {
+    background-color: #f8f9fa;
+}
+
+/* Custom tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .stCard {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Custom sidebar styling */
+.sidebar .sidebar-content {
+    background-color: #f8f9fa;
+}
+
+/* Custom option menu styling */
+.nav-link {
+    border-radius: 8px !important;
+    margin: 5px 0 !important;
+    transition: all 0.2s ease !important;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.nav-link.active {
+    font-weight: 600 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Animation for value changes */
+@keyframes highlight {
+    0% {
+        background-color: rgba(255, 255, 0, 0.3);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.highlight {
+    animation: highlight 1.5s ease-out;
+}
+
+/* Custom slider styling */
+div[data-testid="stSlider"] {
+    padding: 1rem 0;
+}
+
+/* Custom expander styling */
+details {
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+summary {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Custom tabs styling */
+button[role="tab"] {
+    border-radius: 8px 8px 0 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500 !important;
+}
+
+/* Custom metric styling */
+[data-testid="stMetric"] {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom dataframe styling */
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Custom selectbox styling */
+div[data-baseweb="select"] {
+    border-radius: 8px !important;
+}
